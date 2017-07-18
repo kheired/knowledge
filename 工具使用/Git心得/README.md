@@ -276,3 +276,68 @@
 >
 >- 上线 功能 by @zhengfeijie
 >```
+
+### commit message格式
+```text
+<type>: <subject>
+
+<description>   # 可选
+
+<extra>         # 可选
+```
+
+>任何一行都不得超过72个字符（或100个字符），避免自动换行影响美观。
+
+1. **\<type\>**
+
+    用于说明commit的类别。
+
+    1. `feat`：新功能（feature）。
+    2. `fix`：修补bug。
+    3. `docs`：文档（documentation）。
+    4. `style`： 格式（不影响代码运行的变动）。
+    5. `refactor`：重构（即不是新增功能，也不是修改bug的代码变动）。
+    6. `test`：增加测试。
+    7. `chore`：构建过程或辅助工具的变动。
+    8. `revert`：撤销之前的commit。
+
+        >e.g.
+        >
+        >```text
+        >revert: feat: add 'graphiteWidth' option
+        >
+        >This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
+        >```
+2. **\<subject\>**
+
+    commit的简短描述。
+
+    - 以动词开头，使用第一人称现在时。
+
+        >比如change，而不是~~changed~~或~~changes~~。
+    - 第一个字母小写。
+    - 结尾不加句号。
+3. **\<description\>**
+
+    commit的详细描述。
+
+    - 使用第一人称现在时。
+4. **\<extra\>**
+
+    1. 不兼容变动
+
+        以`BREAKING CHANGE`开头的内容。
+    2. 关闭issue
+
+        `Closes #1, #2`。
+
+>e.g.
+>
+>```text
+>feat: 添加了分享功能
+>
+>给页面添加了分享功能
+>
+>- 添加分享到微博的功能
+>- 添加分享到微信的功能
+>```
