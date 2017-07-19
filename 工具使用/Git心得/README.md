@@ -6,25 +6,26 @@
     ```bash
     git reset --hard HEAD
     ```
-2. tag
+2. 拉取远程并修剪本地
+
+    ```bash
+    git fetch -fp
+    ```
+3. 新建远程分支
+
+    ```bash
+    # 新建本地分支
+    git push origin 分支名
+    ```
+4. tag
 
     ```bash
     git tag
 
     git tag 名字
+    git push --tags
 
     git tag -d 名字 # 删除本地tag
-    ```
-3. 拉取远程并修剪本地
-
-    ```bash
-    git fetch -fp
-    ```
-4. 新建远程分支
-
-    ```bash
-    # 新建本地分支
-    git push origin 分支名
     ```
 
 ### 如何在一台电脑中使用2（多个）个Github账号的SSH keys
@@ -197,9 +198,14 @@
     #tag描述：
     2017-07-18
 
-    - 新增 某功能 by @名字
-    - 优化 某功能 by @名字
-    - 修改 某功能 by @名字
+    - 重构 某功能 by @wushi
+    - 修复 某功能 by @yangjiu
+    - 更新 某功能 by @sunba
+    - 修改 某功能 by @qianqi
+    - 优化 某功能 by @zhaoliu
+    - 新增 某功能 by @wangwu
+    - 下线 某功能 by @lisi
+    - 移除 某功能 by @zhangsan
     - 上线 某功能 by @名字
     # “release/版本号”合并至本地master分支、本地develop分支
     # 新建本地“版本号”tag
@@ -257,27 +263,30 @@
     # 推送至远程tag
     ```
 
->CHANGELOG.md格式：
+>e.g. CHANGELOG.md
 >
 >```text
 ># Change Log
 >
->## [1.0.2] - 2017-07-16
->
->- 修复 某功能 by @名字
->
 >## [1.0.1] - 2017-07-16
 >
->- 修改 功能 by @wangwu
->- 新增 功能 by @lisi
->- 优化 功能 by @zhangsan
+>- 重构 某功能 by @wushi
+>- 修复 某功能 by @yangjiu
+>- 更新 某功能 by @sunba
+>- 修改 某功能 by @qianqi
+>- 优化 某功能 by @zhaoliu
+>- 新增 某功能 by @wangwu
+>- 下线 某功能 by @lisi
+>- 移除 某功能 by @zhangsan
 >
 >## [1.0.0] - 2017-06-08
 >
->- 上线 功能 by @zhengfeijie
+>- 上线 某功能 by @zhengfeijie
 >```
 
 ### commit message格式
+>仅限于用在commit message，不得用在change log。
+
 ```text
 <type>: <subject>
 

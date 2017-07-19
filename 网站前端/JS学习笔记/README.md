@@ -632,7 +632,7 @@
         ```
     6. 对象的属性、方法，与变量、方法命名规则相同。
     7. 若属性、变量、方法在表示其是私有的，可在开头加一个下划线`_`作为区分。
-6. 使用字面量代替构造函数（普通函数）的[数据创建方式](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端概念/基础概念.md#数据创建方式)
+6. 使用字面量代替构造函数（普通函数）的[数据创建方式](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端内容/基础知识.md#数据创建方式)
 
     >好处：
     >1. 代码更少。
@@ -782,7 +782,7 @@
         1. 使用外部资源。
         2. 不在HTML内嵌事件处理函数。
         3. 对只为DOM增添的内容，转移到外部资源中动态创建。
-    5. 性能优化[从URL输入之后](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端概念/README.md#页面载入解析步骤)就开始考虑。
+    5. 性能优化[从URL输入之后](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端内容/README.md#页面载入解析步骤)就开始考虑。
 
         >避免~~微优化~~：
         >
@@ -1254,7 +1254,7 @@
 >1. 当JS出现错误时，JS引擎会根据JS调用栈逐级寻找对应的`catch`，如果**没有找到相应的catch handler**或**catch handler本身又有error**或**又抛出新的error**，就会把这个error交给浏览器，浏览器会用各自不同的方式显示错误信息，可以用`window.onerror`进行自定义操作。
 >2. 在某个**JS block**（`<script>`或`try-catch`的`try`语句块）内，第一个错误触发后，当前JS block后面的代码会被自动忽略，不再执行，其他的JS block内代码不被影响。
 
-1. [原生错误类型](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端概念/基础概念.md#原生错误类型)
+1. [原生错误类型](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端内容/基础知识.md#原生错误类型)
 2. 自定义错误
 
     ```javascript
@@ -1795,8 +1795,8 @@
         >问题：包含引用类似值的属性，始终会共享给原型与所有实例（浅复制）。
 
 ### 内存机制
-1. JS自动完成内存分配、[回收](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端概念/README.md#垃圾回收)。
-2. [变量](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端概念/基础概念.md#js数据类型)在内存中的存储
+1. JS自动完成内存分配、[回收](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端内容/README.md#垃圾回收)。
+2. [变量](https://github.com/realgeoffrey/knowledge/blob/master/网站前端/前端内容/基础知识.md#js数据类型)在内存中的存储
 
     1. 栈内存（stack）：
 
